@@ -1,0 +1,18 @@
+// Complex b grid, brought to you by Susy:
+
+.basic-container
+  margin: 0 0 5em
+  ul
+    +trailer
+    @extend %reset-list-style
+    @extend %reset-margin
+    @extend %reset-padding
+    li
+      +border-radius(3px)
+      background-color: $pink
+      line-height: 9em
+      margin-bottom: 1em
+      color: $white
+      font-weight: bold
+      &:nth-child(even)
+        background-color: $blue

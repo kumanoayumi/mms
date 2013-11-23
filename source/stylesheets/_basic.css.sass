@@ -1,0 +1,80 @@
+// Complex b grid, brought to you by Susy:
+
+.page
+
+  +at-breakpoint(4)
+    +susy-grid-background
+    // Establish our new 8-column container.
+    +container
+    nav
+      +span-columns(4, 4)
+      height : auto
+    .content
+      +span-columns(4, 4)
+      .main
+        +span-columns(4, 4)
+      .secondary
+        +span-columns(4, 4)
+
+  +at-breakpoint(8)
+    +susy-grid-background
+    // Establish our new 8-column container.
+    +container
+    nav
+      +span-columns(8, 8)
+      height : auto
+    .content
+      +span-columns(8, 8)
+      .main
+        +span-columns(4, 8)
+      .secondary
+        +span-columns(4 omega, 8)
+
+  +at-breakpoint(12)
+    +susy-grid-background
+    // page acts as a container for our grid.
+    +container
+
+    // header and footer are full-width by default.
+    header, footer
+      clear: both
+
+    // nav spans 3 columns of total 12.
+    nav
+      +span-columns(3,12)
+
+    .content
+      // content spans the final (omega) 9 columns of 12.
+      +span-columns(9 omega,12)
+
+      // main content spans 6 of those 9 columns.
+      .main
+        +span-columns(6,9)
+
+      // secondary content spans the final 3 (omega) of 9 columns.
+      .secondary
+        +span-columns(3 omega,9)
+
+.page
+  background-color: $beige
+  header, footer
+    clear: both
+    line-height: 120px
+    background-color: darken($coral,30)
+  nav
+    background-color: $orange
+  +at-breakpoint(4)
+    nav
+      height: auto
+  +at-breakpoint(12)
+    nav
+      height: 290px
+  .content
+    height: auto
+    background-color: $yellow
+    .main
+      height: 200px
+      background-color: $blue
+    .secondary
+      height: 200px
+      background-color: $pink

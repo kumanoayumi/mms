@@ -1,0 +1,45 @@
+@charset "utf-8"
+
+@import "compass"
+@import "susy"
+@import "reset"
+
+@import "color"
+
+@import "magic"
+@import "basic"
+@import "list"
+
+body
+  +trailer
+  font-family: 'Lato', sans-serif
+  background: #ffffff
+  color: $gray
+  text-align: center
+  letter-spacing: 0.07em
+  h1
+    @extend %reset-margin
+    @extend %reset-padding
+    line-height: 3em
+    font-weight: 700
+
+nav#nav
+  +inline-block-list
+  height: 7em
+  li
+    +border-radius(3px)
+    background-color: $orange
+    line-height: 3em
+    a
+      display: block
+      color: $white
+      text-decoration: none
+      &:hover
+        background-color: darken($orange, 10)
+
+
+footer#footer
+  line-height: 4em
+  font-size: 12px
+  a
+    +link-colors($orange, $pink, $orange, $orange, $orange)

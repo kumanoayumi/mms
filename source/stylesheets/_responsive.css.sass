@@ -1,0 +1,15 @@
+$total-columns: 4
+.page
+  // Establish our default 4-column grid container.
+  +container
+
+  // Create a media-query breakpoint at a min-width of 30em
+  // And use a larger 8-column grid within that media-query.
+  +at-breakpoint(8)
+    // Establish our new 8-column container.
+    +container
+    nav
+      +span-columns(8, 8)
+      height : auto
+    .content
+      +span-columns(8, 8)

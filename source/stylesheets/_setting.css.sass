@@ -1,0 +1,21 @@
+.setting-container
+  margin: 0 0 5em
+  ul
+    +trailer
+    @extend %reset-list-style
+    @extend %reset-margin
+    @extend %reset-padding
+    li
+      +border-radius(3px)
+      background-color: $pink
+      line-height: 9em
+      margin-bottom: 1em
+      color: $white
+      font-weight: bold
+      &:nth-child(even)
+        background-color: $blue
+
+$total-columns : 12
+$column-width  : 4em
+$gutter-width  : 1em
+$grid-padding  : $gutter-width

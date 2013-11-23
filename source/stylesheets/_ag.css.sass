@@ -1,0 +1,41 @@
+// Complex AG grid, brought to you by Susy:
+$total-columns  : 12
+$column-width   : 5em
+$gutter-width   : 1em
+$grid-padding   : $gutter-width
+
+.ag-test
+  @include susy-grid-background
+  @include clearfix
+  @include trailer
+  background: #FBEECB
+  clear: both
+.ag1
+  @include span-columns(2,10)
+  background: #71DAD2
+.ag2
+  @include span-columns(6,10)
+  background: #FAE7B3
+.ag3
+  @include span-columns(2 omega, 10)
+  background: #71DAD2
+.ag4
+  @include span-columns(3,6)
+  background: #EE9E9C
+.ag5
+  @include span-columns(3 omega,6)
+  background: #EE9E9C
+.ag6
+  @include span-columns(2,6)
+  background: #F09671
+.ag7
+  @include span-columns(4 omega,6)
+.ag8
+  @include span-columns(2,4)
+  background: #EE9E9C
+.ag9
+  @include span-columns(2 omega,4)
+  background: #EE9E9C
+.ag10
+  clear: both
+  background: #EA9FC3

@@ -1,0 +1,58 @@
+// base
+$total-columns : 12
+$column-width  : 4em
+$gutter-width  : 1em
+$grid-padding  : $gutter-width
+
+// breakpoint
+$break-tablet  : 4
+$break-tablet  : 8
+$break-desktop : 12
+$break-huge    : 16
+
+$layouts: $break-tablet, $break-desktop, $break-huge
+@each $layout in $layouts
+  +at-breakpoint($layout)
+    .container
+      +set-container-width
+      +susy-grid-background
+
+
++at-breakpoint(8em $break-tablet)
+  .basic-container
+    ul
+      +container
+      li
+        +span-columns(4,8)
+        +nth-omega(2n)
+        // +isolate(2)
+
++at-breakpoint($break-desktop)
+  .basic-container
+    ul
+      +container
+      li
+        +span-columns(3,12)
+        // &:nth-child(3n+1)
+        //   +omega
+        +remove-nth-omega(2n)
+        +nth-omega(3n+1)
+        // Padding Mixins
+        // +prefix(1)
+        // +suffix(1)
+        // +pad(1,1)
+        // +bleed(1)
+        // Margin Mixins
+        // +pre(2)
+        // +post(3)
+        // +squish(2,3)
+        // +push(3)
+        // +pull(2)
+        // +isolate(2)
+
+nav#nav
+  ul
+    +container
+    li
+      +span-columns(4,12)
+      +nth-omega(3)
