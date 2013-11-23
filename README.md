@@ -26,3 +26,5 @@ Use ```middleman``` to do your live development and ```middleman build``` to ren
 
 For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/) or [Middleman(日本語)](http://middlemanjp.github.io/).
 
+For full Susy documentation, visit the [Susy website](http://susy.oddbird.net/).
+
