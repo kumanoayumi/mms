@@ -17,12 +17,12 @@ gem install bundler
 Then just download or if you prefer, clone the repository down to your local machine:
 
 ```
-git clone http://github.com/nathos/amicus.git my_new_project
+git clone https://github.com/kumanoayumi/mms.git my_new_project
 ```
 
 Finally, do a ```bundle install``` to install the required gems -- even Middleman itself!
 
 Use ```middleman``` to do your live development and ```middleman build``` to render your static file output to the ```/build/``` directory.
 
-For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/).
+For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/) or [Middleman(日本語)](http://middlemanjp.github.io/).
 
