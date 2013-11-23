@@ -1,7 +1,5 @@
-mms
+Middleman Meets Susy - DEMO
 ===
-
-# Middleman Meets Susy - DEMO
 
 For Tokyo Middleman Meetup #1.
 This project uses Middleman & Susy grid system.
@@ -16,7 +14,7 @@ Start by installing [Bundler](http://gembundler.com/), if you don't already have
 gem install bundler
 ```
 
-Then just download the [latest source](https://github.com/kumanoayumi/mms) or if you prefer, clone the repository down to your local machine:
+Then just download or if you prefer, clone the repository down to your local machine:
 
 ```
 git clone http://github.com/nathos/amicus.git my_new_project
