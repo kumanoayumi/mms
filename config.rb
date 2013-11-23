@@ -72,3 +72,8 @@ configure :build do
 end
 
 activate :livereload
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+end
